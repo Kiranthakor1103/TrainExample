@@ -9,7 +9,7 @@ function calculateTrainRounds(list, maxCapacity) {
 
     let group = list[i];
 
-    // While the group size is greater than  max capacity, split it
+    // While the group size is max capacity, split it
     while (group > maxCapacity) {
       rounds.push([maxCapacity]); // Add a full round of max capacity
       emptySeats.push(0); // No empty seats in a full round
